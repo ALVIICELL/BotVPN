@@ -58,7 +58,7 @@ setup_bot() {
    rm -rf /root/BotVPN
 
     if [ ! -f /root/BotVPN/app.js ]; then
-        git clone https://github.com/arivpnstores/BotVPN.git /root/BotVPN
+        git clone https://github.com/ALVIICELL/BotVPN.git /root/BotVPN
     fi
 
 npm install -g npm@latest
@@ -142,7 +142,7 @@ cd
 cat >/etc/cron.d/backup_sellvpn <<'EOF'
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-0 0 * * * root /usr/bin/backup_sellvpn
+0 * * * * root /usr/bin/backup_sellvpn
 EOF
 
 chmod +x /usr/bin/backup_sellvpn
